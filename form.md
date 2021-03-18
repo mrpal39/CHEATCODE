@@ -10,7 +10,7 @@
 #    ('P', 'PayPal')
 )
 "
-
+```
 class CheckoutForm(forms.Form):
     shipping_address = forms.CharField(required=False)
     shipping_address2 = forms.CharField(required=False)
@@ -21,7 +21,7 @@ class CheckoutForm(forms.Form):
         }))
     shipping_zip = forms.CharField(required=False)
 
- ***   billing_address = forms.CharField(required=False)
+   billing_address = forms.CharField(required=False)
     billing_address2 = forms.CharField(required=False)
     billing_country = CountryField(blank_label='(select country)').formfield(
         required=False,
@@ -61,5 +61,4 @@ class PaymentForm(forms.Form):
     stripeToken = forms.CharField(required=False)
     save = forms.BooleanField(required=False)
     use_default = forms.BooleanField(required=False)
-
-***
+    ```
